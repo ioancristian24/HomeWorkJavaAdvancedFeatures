@@ -1,12 +1,12 @@
-public class User<u> {
+public final class User {
 
-    private String username;
+     final String username;
 
-    private String firstName;
+     final String firstName;
 
-    private String lastName;
+     final String lastName;
 
-    User(String username, String firstName, String lastName) {
+    public User(String username, String firstName, String lastName) {
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -16,25 +16,25 @@ public class User<u> {
         return username;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+    //public void setUsername(String username) {
+        //this.username = username;
+    //}
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    //public void setFirstName(String firstName) {
+        //this.firstName = firstName;
+    //}
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+    //public void setLastName(String lastName) {
+        //this.lastName = lastName;
+    //}
 
     public void generateDisplayName (String username){
         System.out.println("First Name: " + this.firstName + "\n" + "Last Name: " + this.lastName);

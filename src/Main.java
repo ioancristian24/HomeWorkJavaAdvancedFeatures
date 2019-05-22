@@ -10,5 +10,9 @@ public class Main {
 
     user1.generateDisplayName("ion78");
 
+    User user2 = new User("marian94","Marian","Miron");
+
+    user2.generateDisplayName("marian94");
+
     }
 }
