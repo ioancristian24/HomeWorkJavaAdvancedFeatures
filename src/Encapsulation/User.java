@@ -1,10 +1,12 @@
+package Encapsulation;
+
 public final class User {
 
-     final String username;
+     private String username;
 
-     final String firstName;
+     private String firstName;
 
-     final String lastName;
+     private String lastName;
 
     public User(String username, String firstName, String lastName) {
         this.username = username;
