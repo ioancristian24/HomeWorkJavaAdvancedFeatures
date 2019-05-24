@@ -5,12 +5,14 @@ public class Main1 {
     public static void main(String[] args) {
 
         Animal animal = new Animal(10, "vegetarian", 4);
+        display(animal);
 
         System.out.println(" Animalul are " + animal.getAge() + " ani" + ", este "
                 + animal.getVegetarian() + " si are " + animal.getNumberOfLegs() + " picioare.");
 
 
         Animal dog = new Dog(10, "carnivor", 4, "cenusie");
+        display1(dog);
 
         System.out.println(" Cainele are " + dog.getAge() + " ani" + ", este "
                 + dog.getVegetarian() + ", are " + dog.getNumberOfLegs() + " picioare " + "si blana " + dog.getColor() + ".");
@@ -30,12 +32,11 @@ public class Main1 {
 
     }
 
-    public void display(Animal animal) {
+    public static void display(Animal animal) {
         System.out.println(animal.toString());
     }
 
-    public void display1(Animal dog){
+    public static void display1(Animal dog) {
         System.out.println(dog.toString());
     }
-
 }
